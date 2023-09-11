@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <head>
+      <h1>Your Calculator</h1>
+    </head>
+    <main>
+      <div class="calculator_container">
+        <div class="calculator_display"></div>
+        <div class="claculator_control">
+          <button type="button" class="btn-control" id="clear">CLEAR</button>
+          <button type="button" class="btn-control" id="del">DEL</button>
+        </div>
+        <div class="calculator_main">
+          <div class="calculator_num">
+            <button type="button" class="btn-num" value="7">7</button>
+            <button type="button" class="btn-num" value="8">8</button>
+            <button type="button" class="btn-num" value="9">9</button>
+            <button type="button" class="btn-num" value="4">4</button>
+            <button type="button" class="btn-num" value="5">5</button>
+            <button type="button" class="btn-num" value="6">6</button>
+            <button type="button" class="btn-num" value="3">3</button>
+            <button type="button" class="btn-num" value="2">2</button>
+            <button type="button" class="btn-num" value="1">1</button>
+            <button type="button" class="btn-num" value="0">0</button>
+            <button type="button" class="btn-num" value=".">.</button>
+            <button
+              type="button"
+              class="btn-num"
+              id="result"
+              onclick="Calcular()"
+            >
+              =
+            </button>
+          </div>
+          <div class="calculator_ops">
+            <button type="button" class="btn-ops" value="x">x</button>
+            <button type="button" class="btn-ops" value="/">/</button>
+            <button type="button" class="btn-ops" value="-">-</button>
+            <button type="button" class="btn-ops" value="+">+</button>
+          </div>
+        </div>
+      </div>
+      <!--<div class="calc-extras">
+        <button type="button" class="btn-extras">IMC</button>
+        <button type="button" class="btn-extras">TIN</button>
+      </div>-->
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
