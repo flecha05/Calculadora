@@ -2,7 +2,7 @@ main{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 100px 200px;
 
 }
