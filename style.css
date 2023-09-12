@@ -1,21 +1,31 @@
 main{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: 100px 200px;
+
 }
 .calculator_container{
     height: 600px;
     width: 400px;
     border-radius: 15px;
-    background-color: rgb(197, 138, 253);
+    background-color: rgb(146, 166, 176);
     padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
 }
 .calculator_display{
+    font-weight: bold;
+    font-family: 'Arvo', serif;
+    text-align: right;
+    font-size: 20px;
     height: 100px;
     border-radius: 10px;
     padding: 10px;
-    background-color: rgb(173, 233, 214);
+    background-color: rgb(192, 231, 218);
 }
 .claculator_control{
     display: flex;
@@ -23,6 +33,10 @@ main{
     margin: 20px 5px 5px 5px;
 }
 .btn-control{
+    background-color: rgb(168, 140, 195);
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
     height: 60px;
     width: 95px;
     border-radius: 10px;
@@ -39,8 +53,13 @@ main{
     grid-template-columns: repeat(3 , auto );
 }
 .btn-num{
+    font-size: 25px;
+    font-weight: bold;
     margin: 5px;
     border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .calculator_ops{
     height: 400px;
@@ -50,23 +69,33 @@ main{
     grid-template-columns: repeat(1 , auto );
 }
 .btn-ops{
+    font-size: 25px;
+    font-weight: 500;
+    background-color: rgb(255, 181, 43);
     margin: 5px;
     border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-/* Extra Calc*/
-.calc-extras{
+.maths-rules{
     height: 100px;
-    width: 400px;
-    margin: 10px;
-    border-radius: 15px;
-    padding: 10px 20px;
-    background-color: rgb(123, 210, 123);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 200px;
+    background-color: white;
+    border: 3px black dotted;
+    border-radius: 10px;
+    padding: 10px;
+    margin:20px
 }
-.btn-extras{
-    height: 90px;
-    width: 190px;
-    border-radius: 12px;
+footer{
+    text-align: center;
+    font-family: 'Arvo', serif;
+    font-size: 10px;
+    display: block;
+    margin: 1rem;
 }

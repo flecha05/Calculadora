@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,700;1,700&family=Gluten:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Calculator</title>
   </head>
   <body>
-    <head>
-      <h1>Your Calculator</h1>
-    </head>
     <main>
       <div class="calculator_container">
         <div class="calculator_display"></div>
@@ -34,7 +37,7 @@
               type="button"
               class="btn-num"
               id="result"
-              onclick="Calcular()"
+              onclick="resultado()"
             >
               =
             </button>
@@ -47,12 +50,19 @@
           </div>
         </div>
       </div>
-      <!--<div class="calc-extras">
-        <button type="button" class="btn-extras">IMC</button>
-        <button type="button" class="btn-extras">TIN</button>
-      </div>-->
+      <div class="maths-rules">
+        <p>
+          Keep in mind that in maths, there's a specific sequence in which we
+          solve mixed mathematical operations
+        </p>
+      </div>
     </main>
-
+    <footer class="footer">
+      <p>Copyright © 2023 FlechaFacundo</p>
+      <a href="https://github.com/michalosman" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i
+      ></a>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
